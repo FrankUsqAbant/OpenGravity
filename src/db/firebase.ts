@@ -7,13 +7,20 @@ import path from 'path';
 let db: FirebaseFirestore.Firestore;
 
 export async function initDB() {
-    // Leemos el service account manualmente para no depender de process.env que a veces falla en Windows
-    const serviceAccountPath = path.resolve(config.GOOGLE_APPLICATION_CREDENTIALS || './service-account.json');
-    if (!fs.existsSync(serviceAccountPath)) {
-        throw new Error(`No se encontró el archivo de credenciales en: ${serviceAccountPath}`);
+    let serviceAccount;
+    const creds = config.GOOGLE_APPLICATION_CREDENTIALS;
+
+    // Si empieza por '{', significa que pegamos el JSON directo en Render
+    if (creds && creds.trim().startsWith('{')) {
+        serviceAccount = JSON.parse(creds);
+    } else {
+        // Si no, es una ruta de archivo local
+        const serviceAccountPath = path.resolve(creds || './service-account.json');
+        if (!fs.existsSync(serviceAccountPath)) {
+            throw new Error(`No se encontró el archivo de credenciales en: ${serviceAccountPath}`);
+        }
+        serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
     }
-    
-    const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
 
     initializeApp({
         credential: cert(serviceAccount)
