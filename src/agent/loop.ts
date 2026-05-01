@@ -6,11 +6,17 @@ const SYSTEM_PROMPT = `
 Eres OpenGravity, un agente de IA personal creado desde cero, funcionando localmente.
 Tu interfaz principal es Telegram. Tu objetivo es ser extremadamente útil, claro, y seguro.
 Respondes siempre en español. Puedes usar herramientas si es necesario.
+Solo genera notas de voz si el usuario te lo pide explícitamente usando la herramienta send_voice_response.
 `;
 
 const MAX_ITERATIONS = 5;
 
-export async function processUserMessage(userMessage: string): Promise<string> {
+export interface AgentResponse {
+    content: string;
+    voicePath?: string;
+}
+
+export async function processUserMessage(userMessage: string): Promise<AgentResponse> {
     // 1. Guardar mensaje del usuario
     await saveMessage('user', userMessage);
 
@@ -24,6 +30,7 @@ export async function processUserMessage(userMessage: string): Promise<string> {
     ];
 
     let iteration = 0;
+    let voicePath: string | undefined;
 
     // Agent Loop
     while (iteration < MAX_ITERATIONS) {
@@ -43,8 +50,17 @@ export async function processUserMessage(userMessage: string): Promise<string> {
                 if (toolFunction) {
                     try {
                         console.log(`Ejecutando herramienta: ${functionName}`);
-                        const result = await toolFunction();
+                        const args = JSON.parse(toolCall.function.arguments || '{}');
+                        const result = await (toolFunction as any)(args);
                         
+                        // Si es la herramienta de voz, capturamos la ruta del archivo
+                        if (functionName === 'send_voice_response') {
+                            const parsed = JSON.parse(result);
+                            if (parsed.filePath) {
+                                voicePath = parsed.filePath;
+                            }
+                        }
+
                         messages.push({
                             role: 'tool',
                             tool_call_id: toolCall.id,
@@ -69,11 +85,11 @@ export async function processUserMessage(userMessage: string): Promise<string> {
             // Si no hay tool calls, terminamos el loop y devolvemos la respuesta al usuario
             const finalContent = responseMessage.content || '';
             await saveMessage('assistant', finalContent);
-            return finalContent;
+            return { content: finalContent, voicePath };
         }
     }
 
     const abortMsg = "He alcanzado el límite máximo de iteraciones de pensamiento. Por favor, intenta ser más específico.";
     await saveMessage('assistant', abortMsg);
-    return abortMsg;
+    return { content: abortMsg };
 }

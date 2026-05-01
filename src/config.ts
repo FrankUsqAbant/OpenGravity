@@ -9,6 +9,7 @@ export const config = {
     OPENROUTER_MODEL: process.env.OPENROUTER_MODEL || 'openrouter/free',
     DB_PATH: process.env.DB_PATH || './memory.db',
     GOOGLE_APPLICATION_CREDENTIALS: process.env.GOOGLE_APPLICATION_CREDENTIALS || './service-account.json',
+    ELEVENLABS_API_KEY: process.env.ELEVENLABS_API_KEY || '',
 };
 
 // Validate critical config

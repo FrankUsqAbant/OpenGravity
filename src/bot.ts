@@ -1,4 +1,4 @@
-import { Bot } from 'grammy';
+import { Bot, InputFile } from 'grammy';
 import { config } from './config.js';
 import { processUserMessage } from './agent/loop.js';
 import { transcribeAudio } from './agent/llm.js';
@@ -62,7 +62,17 @@ export function setupBot() {
         await ctx.replyWithChatAction("typing");
         try {
             const response = await processUserMessage(text);
-            await ctx.reply(response);
+            
+            if (response.voicePath && fs.existsSync(response.voicePath)) {
+                await ctx.replyWithChatAction("upload_voice");
+                await ctx.replyWithVoice(new InputFile(response.voicePath));
+                // Borrar archivo después de enviar
+                fs.unlinkSync(response.voicePath);
+            }
+            
+            if (response.content) {
+                await ctx.reply(response.content);
+            }
         } catch (error) {
             console.error("Error procesando mensaje:", error);
             await ctx.reply("Ha ocurrido un error interno al procesar tu solicitud.");
