@@ -1,6 +1,11 @@
 import { Bot } from 'grammy';
 import { config } from './config.js';
 import { processUserMessage } from './agent/loop.js';
+import { transcribeAudio } from './agent/llm.js';
+import fs from 'fs';
+import path from 'path';
+import https from 'https';
+import { pipeline } from 'stream/promises';
 
 export function setupBot() {
     const bot = new Bot(config.TELEGRAM_BOT_TOKEN);
@@ -21,10 +26,40 @@ export function setupBot() {
 
     bot.on("message:text", async (ctx) => {
         const text = ctx.message.text;
-        
-        // Indicador de "escribiendo..."
-        await ctx.replyWithChatAction("typing");
+        await handleBotResponse(ctx, text);
+    });
 
+    bot.on(["message:voice", "message:audio"], async (ctx) => {
+        await ctx.replyWithChatAction("typing");
+        
+        const file = await ctx.getFile();
+        const filePath = path.join(process.cwd(), `temp_${Date.now()}_${file.file_id}`);
+        
+        try {
+            // Descargar archivo de Telegram
+            const url = `https://api.telegram.org/file/bot${config.TELEGRAM_BOT_TOKEN}/${file.file_path}`;
+            await downloadFile(url, filePath);
+
+            // Transcribir con Groq
+            const text = await transcribeAudio(filePath);
+            await ctx.reply(`🎤 _Transcripción:_ "${text}"`, { parse_mode: "Markdown" });
+
+            // Procesar con el agente
+            await handleBotResponse(ctx, text);
+
+        } catch (error) {
+            console.error("Error procesando audio:", error);
+            await ctx.reply("Lo siento, no pude procesar o transcribir tu audio.");
+        } finally {
+            // Borrar archivo temporal
+            if (fs.existsSync(filePath)) {
+                fs.unlinkSync(filePath);
+            }
+        }
+    });
+
+    async function handleBotResponse(ctx: any, text: string) {
+        await ctx.replyWithChatAction("typing");
         try {
             const response = await processUserMessage(text);
             await ctx.reply(response);
@@ -32,7 +67,24 @@ export function setupBot() {
             console.error("Error procesando mensaje:", error);
             await ctx.reply("Ha ocurrido un error interno al procesar tu solicitud.");
         }
-    });
+    }
+
+    async function downloadFile(url: string, dest: string) {
+        return new Promise((resolve, reject) => {
+            https.get(url, (res) => {
+                if (res.statusCode !== 200) {
+                    reject(new Error(`Fallo descarga: ${res.statusCode}`));
+                    return;
+                }
+                const fileStream = fs.createWriteStream(dest);
+                res.pipe(fileStream);
+                fileStream.on('finish', () => {
+                    fileStream.close();
+                    resolve(true);
+                });
+            }).on('error', reject);
+        });
+    }
 
     return bot;
 }
