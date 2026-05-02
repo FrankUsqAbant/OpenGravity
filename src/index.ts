@@ -1,9 +1,13 @@
 import { initDB } from './db/firebase.js';
 import { setupBot } from './bot.js';
+import { initGoogleWorkspace } from './initGoogle.js';
 import express from 'express';
 
 async function main() {
     console.log("Iniciando OpenGravity...");
+    
+    // Inicializar credenciales de Google antes de cualquier otra cosa
+    initGoogleWorkspace();
 
     try {
         // Inicializar Base de Datos

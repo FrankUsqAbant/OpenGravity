@@ -10,6 +10,7 @@ export const config = {
     DB_PATH: process.env.DB_PATH || './memory.db',
     GOOGLE_APPLICATION_CREDENTIALS: process.env.GOOGLE_APPLICATION_CREDENTIALS || './service-account.json',
     ELEVENLABS_API_KEY: process.env.ELEVENLABS_API_KEY || '',
+    GOG_ACCOUNT: process.env.GOG_ACCOUNT || '',
 };
 
 // Validate critical config

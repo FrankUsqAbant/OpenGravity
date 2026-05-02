@@ -26,6 +26,7 @@ export function setupBot() {
 
     bot.on("message:text", async (ctx) => {
         const text = ctx.message.text;
+        console.log(`Mensaje recibido de ${ctx.from.id}: ${text}`);
         await handleBotResponse(ctx, text);
     });
 
