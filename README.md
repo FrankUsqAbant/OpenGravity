@@ -9,7 +9,11 @@
 ---
 
 <div align="center">
-  <img src="./docs/preview.webp" alt="Opengravity Flip-Book Magazine Preview" width="850" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);" />
+  <a href="https://frankusqabant.github.io/OpenGravity/" target="_blank" rel="noopener noreferrer" title="Haz clic para abrir el catálogo interactivo en vivo">
+    <img src="./docs/preview.webp" alt="Opengravity Flip-Book Magazine Preview" width="850" style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); cursor: pointer;" />
+  </a>
+  <br>
+  <sub>👆 <i>Haz clic en la imagen para abrir la revista interactiva en vivo</i></sub>
 </div>
 
 ---
@@ -42,11 +46,8 @@
 
 ## 🚀 Despliegue en GitHub Pages
 
-1. Dirígete a **Settings** > **Pages** en tu repositorio de GitHub.
-2. En **Build and deployment > Source**, selecciona **Deploy from a branch**.
-3. En **Branch**, elige `main` y la carpeta `/docs` (o `/ (root)`).
-4. Guarda los cambios y el catálogo estará activo en:
-   `https://frankusqabant.github.io/OpenGravity/`
+El proyecto se despliega automáticamente en GitHub Pages desde la rama `main`:
+👉 **[https://frankusqabant.github.io/OpenGravity/](https://frankusqabant.github.io/OpenGravity/)**
 
 ---
 
