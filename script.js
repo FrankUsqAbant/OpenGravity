@@ -39,62 +39,705 @@ const readmeImages = {
   "Testimonios-de-freeCodeCamp": "https://user-images.githubusercontent.com/90288287/166165623-6c99e5b8-3e65-47f4-8b04-33b4498badb5.png",
   "calculadora": "https://user-images.githubusercontent.com/90288287/166165070-6296f3ad-a431-48e7-ab84-1021561d6916.png",
   "spaceX": "https://user-images.githubusercontent.com/90288287/165407539-41a1d727-86c3-476d-a876-00148a3c21bf.png",
+  "OpenGravity": "https://raw.githubusercontent.com/FrankUsqAbant/OpenGravity/main/preview.webp",
+  "01-testimonios": "https://readme-typing-svg.demolab.com?font=Syne&weight=700&size=34&duration=1800&pause=800&color=C6A962&center=true&vCenter=true&width=600&lines=Testimonios;React+%2B+Vite",
+  "02-contador-de-clics": "https://readme-typing-svg.demolab.com?font=Syne&weight=700&size=34&duration=1800&pause=800&color=C6A962&center=true&vCenter=true&width=600&lines=Contador+de+Clics;React+%2B+Vite"
 };
 
 // ── Project Data ──
 const projects = [
-  { name: "proyecto-curso-html", description: "DevFauna Academy — Plataforma de aprendizaje con HTML5 Semántico, CSS3 Moderno y JavaScript.", githubUrl: "https://github.com/FrankUsqAbant/proyecto-curso-html", liveUrl: "https://frankusqabant.github.io/proyecto-curso-html/", language: "JavaScript", stars: 2, tags: ["JavaScript", "HTML5", "CSS3", "Educación"], updatedAt: "2026-09-03", createdAt: "2025-11-20" },
-  { name: "youttube-git", description: "GitFlow Pro — Guía interactiva visual sobre comandos, ramas y flujos de trabajo en Git.", githubUrl: "https://github.com/FrankUsqAbant/youttube-git", liveUrl: "https://frankusqabant.github.io/youttube-git/", language: "JavaScript", stars: 1, tags: ["JavaScript", "Git", "Herramienta"], updatedAt: "2026-09-03", createdAt: "2024-03-22" },
-  { name: "youtube-git-main", description: "GitLingo — Glosario interactivo y simulador de comandos esenciales de control de versiones.", githubUrl: "https://github.com/FrankUsqAbant/youtube-git-main", liveUrl: "https://frankusqabant.github.io/youtube-git-main/", language: "JavaScript", stars: 1, tags: ["JavaScript", "Git"], updatedAt: "2026-09-03", createdAt: "2024-03-25" },
-  { name: "parallax", description: "Experiencia inmersiva con efecto parallax multi-capa temática Marvel y animaciones fluidas.", githubUrl: "https://github.com/FrankUsqAbant/parallax", liveUrl: "https://frankusqabant.github.io/parallax/", language: "CSS", stars: 2, tags: ["CSS", "Parallax", "Animación"], updatedAt: "2026-08-30", createdAt: "2022-07-15" },
-  { name: "astro-sitio-web", description: "Sitio web ultrarrápido construido con Astro, arquitectura de islas y componentes optimizados.", githubUrl: "https://github.com/FrankUsqAbant/astro-sitio-web", liveUrl: "https://frankusqabant.github.io/astro-sitio-web/", language: "Astro", stars: 2, tags: ["Astro", "Rendimiento", "Web"], updatedAt: "2026-08-29", createdAt: "2025-11-22" },
-  { name: "expense-tracker-ocr", description: "Rastreador inteligente de gastos con reconocimiento óptico de caracteres (OCR) para tickets y recibos.", githubUrl: "https://github.com/FrankUsqAbant/expense-tracker-ocr", liveUrl: null, language: "TypeScript", stars: 1, tags: ["TypeScript", "OCR", "IA", "Finanzas"], updatedAt: "2026-08-29", createdAt: "2026-03-10" },
-  { name: "FrankUsqAbant.github.io", description: "Tarjeta digital interactiva personal con enlaces a redes, código QR, mascota llama animada y formulario.", githubUrl: "https://github.com/FrankUsqAbant/FrankUsqAbant.github.io", liveUrl: "https://frankusqabant.github.io/", language: "JavaScript", stars: 0, tags: ["JavaScript", "Portfolio", "Personal"], updatedAt: "2026-08-29", createdAt: "2026-08-04" },
-  { name: "01-testimonios", description: "Componente de testimonios dinámico desarrollado con React 18, Vite y diseño responsive.", githubUrl: "https://github.com/FrankUsqAbant/01-testimonios", liveUrl: "https://frankusqabant.github.io/01-testimonios/", language: "JavaScript", stars: 1, tags: ["JavaScript", "React", "Vite"], updatedAt: "2026-08-29", createdAt: "2025-02-08" },
-  { name: "vertice-moda", description: "VÉRTICE — Plataforma e-commerce y probador virtual de alta sastrería contemporánea en dark-theme.", githubUrl: "https://github.com/FrankUsqAbant/vertice-moda", liveUrl: "https://frankusqabant.github.io/vertice-moda/", language: "HTML", stars: 0, tags: ["HTML", "E-Commerce", "Diseño", "Dark"], updatedAt: "2026-08-29", createdAt: "2026-07-30" },
-  { name: "02-contador-de-clics", description: "Contador interactivo de alta precisión con React y gestión de estado reactiva.", githubUrl: "https://github.com/FrankUsqAbant/02-contador-de-clics", liveUrl: "https://frankusqabant.github.io/02-contador-de-clics/", language: "CSS", stars: 1, tags: ["CSS", "React"], updatedAt: "2026-08-29", createdAt: "2025-02-08" },
-  { name: "Proyecto-Library", description: "Zen Library — Biblioteca digital de literatura universal clásica y de dominio público.", githubUrl: "https://github.com/FrankUsqAbant/Proyecto-Library", liveUrl: "https://frankusqabant.github.io/Proyecto-Library/", language: "TypeScript", stars: 0, tags: ["TypeScript", "Libros", "UI"], updatedAt: "2026-08-29", createdAt: "2026-07-22" },
-  { name: "aurea-dental", description: "Áurea Dental — Portal web para clínica odontológica de alta gama, estética y citas en línea.", githubUrl: "https://github.com/FrankUsqAbant/aurea-dental", liveUrl: "https://frankusqabant.github.io/aurea-dental/", language: "HTML", stars: 1, tags: ["HTML", "Salud", "Elegante"], updatedAt: "2026-08-29", createdAt: "2026-07-22" },
-  { name: "starter-project-eleventy", description: "Plantilla modular y optimizada para sitios estáticos usando Eleventy (11ty) y Nunjucks.", githubUrl: "https://github.com/FrankUsqAbant/starter-project-eleventy", liveUrl: "https://frankusqabant.github.io/starter-project-eleventy/", language: "Nunjucks", stars: 1, tags: ["Nunjucks", "SSG", "Eleventy"], updatedAt: "2026-08-29", createdAt: "2024-08-22" },
-  { name: "PokeAPI", description: "Pokédex moderna y reactiva que consume la API de Pokémon con filtrado en tiempo real.", githubUrl: "https://github.com/FrankUsqAbant/PokeAPI", liveUrl: "https://frankusqabant.github.io/PokeAPI/", language: "CSS", stars: 0, tags: ["CSS", "API", "Pokémon"], updatedAt: "2026-08-29", createdAt: "2025-03-22" },
-  { name: "Portafolio-Frank-Abanto", description: "Portafolio web minimalista enfocado en performance, tipografía limpia y accesibilidad.", githubUrl: "https://github.com/FrankUsqAbant/Portafolio-Frank-Abanto", liveUrl: "https://frankusqabant.github.io/Portafolio-Frank-Abanto/", language: "CSS", stars: 0, tags: ["CSS", "Portfolio", "Minimalista"], updatedAt: "2026-08-29", createdAt: "2025-08-17" },
-  { name: "Developer-Theme-Portfolio", description: "Tema especializado para desarrolladores con soporte de temas y showcase de proyectos.", githubUrl: "https://github.com/FrankUsqAbant/Developer-Theme-Portfolio", liveUrl: "https://frankusqabant.github.io/Developer-Theme-Portfolio/", language: "JavaScript", stars: 0, tags: ["JavaScript", "Portfolio", "Tema"], updatedAt: "2026-08-29", createdAt: "2025-08-18" },
-  { name: "portafolio-adaptable-bootstrap", description: "Sitio responsive adaptado a cualquier resolución empleando la grilla flexible de Bootstrap.", githubUrl: "https://github.com/FrankUsqAbant/portafolio-adaptable-bootstrap", liveUrl: "https://frankusqabant.github.io/portafolio-adaptable-bootstrap/", language: "HTML", stars: 0, tags: ["HTML", "Bootstrap", "Responsive"], updatedAt: "2026-08-29", createdAt: "2025-02-17" },
-  { name: "PlatosYa", description: "PlatosYa — Aplicación web para delivery gastronómico con catálogo interactivo y pedidos.", githubUrl: "https://github.com/FrankUsqAbant/PlatosYa", liveUrl: "https://platos-ya.vercel.app", language: "JavaScript", stars: 1, tags: ["JavaScript", "Delivery", "App"], updatedAt: "2026-08-29", createdAt: "2026-06-18" },
-  { name: "Aplicaci-n-React-Tareas", description: "Aplicación de productividad para gestión ágil de tareas y flujo diario con React.", githubUrl: "https://github.com/FrankUsqAbant/Aplicaci-n-React-Tareas", liveUrl: "https://frankusqabant.github.io/Aplicaci-n-React-Tareas/", language: "CSS", stars: 2, tags: ["CSS", "React", "Productividad"], updatedAt: "2026-08-29", createdAt: "2022-05-01" },
-  { name: "Contador-de-clics", description: "Contador de clics interactivo con interfaz gráfica amigable y persistencia.", githubUrl: "https://github.com/FrankUsqAbant/Contador-de-clics", liveUrl: "https://frankusqabant.github.io/Contador-de-clics/", language: "JavaScript", stars: 2, tags: ["JavaScript", "React"], updatedAt: "2026-08-29", createdAt: "2022-05-01" },
-  { name: "PredictorDePartidos", description: "Algoritmo y visor de pronósticos deportivos con estadísticas de rendimiento previo.", githubUrl: "https://github.com/FrankUsqAbant/PredictorDePartidos", liveUrl: "https://frankusqabant.github.io/PredictorDePartidos/", language: "JavaScript", stars: 2, tags: ["JavaScript", "Estadística", "IA"], updatedAt: "2026-08-29", createdAt: "2025-10-22" },
-  { name: "NEXUS-ASCII-Generator", description: "Generador de arte ASCII y tipografías personalizadas para consolas y terminales CLI.", githubUrl: "https://github.com/FrankUsqAbant/NEXUS-ASCII-Generator", liveUrl: "https://frankusqabant.github.io/NEXUS-ASCII-Generator/", language: "TypeScript", stars: 2, tags: ["TypeScript", "ASCII", "CLI"], updatedAt: "2026-08-29", createdAt: "2025-11-21" },
-  { name: "simple-yoga-elite", description: "Protocolo Aurora v15.0 — Experiencia wellness y santuario boutique de alta gama.", githubUrl: "https://github.com/FrankUsqAbant/simple-yoga-elite", liveUrl: "https://frankusqabant.github.io/simple-yoga-elite/", language: "JavaScript", stars: 1, tags: ["JavaScript", "React 19", "Wellness", "Luxury UI"], updatedAt: "2026-08-29", createdAt: "2026-03-13" },
-  { name: "document-student", description: "Portal centralizado para gestión de guías, documentos y apuntes académicos.", githubUrl: "https://github.com/FrankUsqAbant/document-student", liveUrl: "https://frankusqabant.github.io/document-student/", language: "TypeScript", stars: 1, tags: ["TypeScript", "React", "Educación"], updatedAt: "2026-08-29", createdAt: "2026-03-02" },
-  { name: "css-basico", description: "Laboratorio de fundamentos de maquetación, selectores y propiedades avanzadas en CSS.", githubUrl: "https://github.com/FrankUsqAbant/css-basico", liveUrl: null, language: "CSS", stars: 2, tags: ["CSS", "Tutorial"], updatedAt: "2025-02-08", createdAt: "2022-05-19" },
-  { name: "javascript", description: "Ejercicios de lógica algorítmica, manipulación del DOM y funciones de orden superior.", githubUrl: "https://github.com/FrankUsqAbant/javascript", liveUrl: null, language: "JavaScript", stars: 2, tags: ["JavaScript", "Algoritmos"], updatedAt: "2025-02-08", createdAt: "2022-05-19" },
-  { name: "ejercicios-javascript", description: "Colección práctica de ejercicios resueltos de JavaScript para desarrollo frontend.", githubUrl: "https://github.com/FrankUsqAbant/ejercicios-javascript", liveUrl: null, language: "JavaScript", stars: 2, tags: ["JavaScript", "Práctica"], updatedAt: "2025-02-08", createdAt: "2022-06-10" },
-  { name: "scripts-main", description: "Utilidades y scripts de automatización para flujos de trabajo cotidianos.", githubUrl: "https://github.com/FrankUsqAbant/scripts-main", liveUrl: null, language: "Code", stars: 2, tags: ["Scripts", "Automatización"], updatedAt: "2025-02-08", createdAt: "2022-06-19" },
-  { name: "proyecto-tech-practica", description: "Landing page técnica diseñada desde cero para validación de habilidades maquetación.", githubUrl: "https://github.com/FrankUsqAbant/proyecto-tech-practica", liveUrl: "https://frankusqabant.github.io/proyecto-tech-practica/", language: "HTML", stars: 1, tags: ["HTML", "CSS", "Práctica"], updatedAt: "2023-03-04", createdAt: "2022-04-21" },
-  { name: "javascript-products-app", description: "Catálogo de productos con filtrado, ordenamiento y persistencia en memoria local.", githubUrl: "https://github.com/FrankUsqAbant/javascript-products-app", liveUrl: "https://frankusqabant.github.io/javascript-products-app/", language: "JavaScript", stars: 1, tags: ["JavaScript", "E-Commerce"], updatedAt: "2023-03-04", createdAt: "2022-04-21" },
-  { name: "demo-sitio-halo", description: "Sitio web conceptual ambientado en el universo Halo con interfaz futurista.", githubUrl: "https://github.com/FrankUsqAbant/demo-sitio-halo", liveUrl: "https://demo-sitio-halo-rho.vercel.app", language: "CSS", stars: 1, tags: ["CSS", "Gaming", "Halo"], updatedAt: "2023-03-04", createdAt: "2022-04-11" },
-  { name: "bootstrap-wibsite", description: "Sitio web corporativo construido con componentes estándar y utilidades Bootstrap.", githubUrl: "https://github.com/FrankUsqAbant/bootstrap-wibsite", liveUrl: "https://frankusqabant.github.io/bootstrap-wibsite/", language: "HTML", stars: 1, tags: ["HTML", "Bootstrap"], updatedAt: "2023-03-04", createdAt: "2022-04-21" },
-  { name: "App-vuejs", description: "Single Page Application (SPA) interactiva desarrollada con Vue.js y reactividad de datos.", githubUrl: "https://github.com/FrankUsqAbant/App-vuejs", liveUrl: null, language: "Vue", stars: 1, tags: ["Vue", "SPA"], updatedAt: "2023-03-04", createdAt: "2022-04-27" },
-  { name: "vue-tareas", description: "Gestor de tareas pendientes con componentes de Vue.js y filtros de estado.", githubUrl: "https://github.com/FrankUsqAbant/vue-tareas", liveUrl: "https://frankusqabant.github.io/vue-tareas/", language: "HTML", stars: 1, tags: ["HTML", "Vue", "Productividad"], updatedAt: "2023-03-04", createdAt: "2022-04-25" },
-  { name: "guess", description: "Juego de adivinanzas numéricas con lógica implementada en Python.", githubUrl: "https://github.com/FrankUsqAbant/guess", liveUrl: null, language: "Python", stars: 1, tags: ["Python", "Juego"], updatedAt: "2023-03-04", createdAt: "2022-04-25" },
-  { name: "practice-page", description: "Página de práctica con animaciones CSS y estructuración modular.", githubUrl: "https://github.com/FrankUsqAbant/practice-page", liveUrl: "https://frankusqabant.github.io/practice-page/", language: "HTML", stars: 1, tags: ["HTML", "CSS"], updatedAt: "2023-03-04", createdAt: "2022-04-25" },
-  { name: "pagina-maquetacion", description: "Proyectos integrales desarrollados durante el taller de maquetación avanzada.", githubUrl: "https://github.com/FrankUsqAbant/pagina-maquetacion", liveUrl: "https://frankusqabant.github.io/pagina-maquetacion/", language: "HTML", stars: 1, tags: ["HTML", "Maquetación"], updatedAt: "2023-03-04", createdAt: "2022-05-09" },
-  { name: "pagina-maquetacion-cv", description: "Currículum Vitae interactivo web diseñado para presentación profesional.", githubUrl: "https://github.com/FrankUsqAbant/pagina-maquetacion-cv", liveUrl: "https://frankusqabant.github.io/pagina-maquetacion-cv/", language: "HTML", stars: 2, tags: ["HTML", "CV", "Diseño"], updatedAt: "2023-03-04", createdAt: "2022-05-09" },
-  { name: "pagina-taller-maquetacion", description: "Landing Page comercial con tipografía curada y llamado a la acción.", githubUrl: "https://github.com/FrankUsqAbant/pagina-taller-maquetacion", liveUrl: "https://pagina-taller-maquetacion.vercel.app", language: "HTML", stars: 1, tags: ["HTML", "Landing"], updatedAt: "2023-03-04", createdAt: "2022-04-18" },
-  { name: "pinguino", description: "Ilustración vectorial pura mediante CSS que representa un pingüino animado.", githubUrl: "https://github.com/FrankUsqAbant/pinguino", liveUrl: null, language: "CSS", stars: 1, tags: ["CSS", "Arte", "Animación"], updatedAt: "2023-03-04", createdAt: "2022-04-25" },
-  { name: "products-desktop", description: "Software de escritorio para inventario y productos con interfaz gráfica en Python.", githubUrl: "https://github.com/FrankUsqAbant/products-desktop", liveUrl: "https://frankusqabant.github.io/products-desktop/", language: "Python", stars: 1, tags: ["Python", "Desktop"], updatedAt: "2023-03-04", createdAt: "2022-04-21" },
-  { name: "Calculadora-Interactiva", description: "Calculadora web moderna con interfaz amigable y soporte para operaciones complejas.", githubUrl: "https://github.com/FrankUsqAbant/Calculadora-Interactiva", liveUrl: "https://frankusqabant.github.io/Calculadora-Interactiva/", language: "JavaScript", stars: 1, tags: ["JavaScript", "Calculadora"], updatedAt: "2023-03-04", createdAt: "2022-05-19" },
-  { name: "Task-Application", description: "Aplicación de tareas diarias con almacenamiento en LocalStorage y panel intuitivo.", githubUrl: "https://github.com/FrankUsqAbant/Task-Application", liveUrl: "https://frankusqabant.github.io/Task-Application/", language: "JavaScript", stars: 1, tags: ["JavaScript", "Productividad"], updatedAt: "2023-03-04", createdAt: "2022-05-19" },
-  { name: "search", description: "Buscador instantáneo en vivo con renderizado reactivo de resultados.", githubUrl: "https://github.com/FrankUsqAbant/search", liveUrl: "https://frankusqabant.github.io/search/", language: "JavaScript", stars: 1, tags: ["JavaScript", "Búsqueda"], updatedAt: "2023-03-04", createdAt: "2022-05-16" },
-  { name: "the-books", description: "Catálogo virtual de recomendaciones de lectura con fichas detalladas de libros.", githubUrl: "https://github.com/FrankUsqAbant/the-books", liveUrl: "https://frankusqabant.github.io/the-books/", language: "JavaScript", stars: 1, tags: ["JavaScript", "Lectura"], updatedAt: "2023-03-04", createdAt: "2022-05-16" },
-  { name: "Treasure-Map", description: "Juego de mapa del tesoro con cuadrícula interactiva y detección de coordenadas.", githubUrl: "https://github.com/FrankUsqAbant/Treasure-Map", liveUrl: null, language: "JavaScript", stars: 1, tags: ["JavaScript", "Juego"], updatedAt: "2023-03-04", createdAt: "2022-05-02" },
-  { name: "Testimonios-de-freeCodeCamp", description: "Clon responsivo de la sección de historias de éxito de freeCodeCamp.", githubUrl: "https://github.com/FrankUsqAbant/Testimonios-de-freeCodeCamp", liveUrl: null, language: "JavaScript", stars: 1, tags: ["JavaScript", "React"], updatedAt: "2023-03-04", createdAt: "2022-05-01" },
-  { name: "calculadora", description: "Calculadora clásica con teclado numérico virtual e historial de cómputo.", githubUrl: "https://github.com/FrankUsqAbant/calculadora", liveUrl: null, language: "JavaScript", stars: 1, tags: ["JavaScript", "Herramienta"], updatedAt: "2023-03-04", createdAt: "2022-05-01" },
-  { name: "spaceX", description: "Taller web inspirado en los lanzamientos aeroespaciales de SpaceX.", githubUrl: "https://github.com/FrankUsqAbant/spaceX", liveUrl: "https://frankusqabant.github.io/spaceX/", language: "JavaScript", stars: 1, tags: ["JavaScript", "React", "Espacio"], updatedAt: "2023-03-04", createdAt: "2022-04-26" },
-  { name: "nodejs-tutorial", description: "Ruta de aprendizaje paso a paso para desarrollo backend con Node.js y APIs.", githubUrl: "https://github.com/FrankUsqAbant/nodejs-tutorial", liveUrl: "https://frankusqabant.github.io/nodejs-tutorial/", language: "JavaScript", stars: 1, tags: ["JavaScript", "Node.js", "Backend"], updatedAt: "2023-03-04", createdAt: "2022-04-25" },
-  { name: "juego-web-frank", description: "Primer videojuego web experimental con mecánicas arcade en canvas.", githubUrl: "https://github.com/FrankUsqAbant/juego-web-frank", liveUrl: null, language: "JavaScript", stars: 0, tags: ["JavaScript", "Juego", "Canvas"], updatedAt: "2022-03-03", createdAt: "2022-03-03" },
-  { name: "frank-taller-maquetacion", description: "Repositorio base de ejercicios de maquetación responsive para web.", githubUrl: "https://github.com/FrankUsqAbant/frank-taller-maquetacion", liveUrl: "https://frankusqabant.github.io/frank-taller-maquetacion/", language: "HTML", stars: 0, tags: ["HTML", "Maquetación"], updatedAt: "2022-02-16", createdAt: "2022-02-16" },
+  {
+    "name": "OpenGravity",
+    "description": "OpenGravity proyecto de un bot para telegram",
+    "githubUrl": "https://github.com/FrankUsqAbant/OpenGravity",
+    "liveUrl": "https://frankusqabant.github.io/OpenGravity/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-09-03",
+    "createdAt": "2026-05-01"
+  },
+  {
+    "name": "proyecto-curso-html",
+    "description": "proyecto-curso-html — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/proyecto-curso-html",
+    "liveUrl": "https://frankusqabant.github.io/proyecto-curso-html/",
+    "language": "JavaScript",
+    "stars": 2,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-09-03",
+    "createdAt": "2025-11-20"
+  },
+  {
+    "name": "youttube-git",
+    "description": "Este es el repositorio de codigo de Git",
+    "githubUrl": "https://github.com/FrankUsqAbant/youttube-git",
+    "liveUrl": "https://frankusqabant.github.io/youttube-git/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-09-03",
+    "createdAt": "2024-03-22"
+  },
+  {
+    "name": "youtube-git-main",
+    "description": "youtube-git-main — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/youtube-git-main",
+    "liveUrl": "https://frankusqabant.github.io/youtube-git-main/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-09-03",
+    "createdAt": "2024-03-25"
+  },
+  {
+    "name": "parallax",
+    "description": "Un sitio con parallax",
+    "githubUrl": "https://github.com/FrankUsqAbant/parallax",
+    "liveUrl": "https://frankusqabant.github.io/parallax/",
+    "language": "CSS",
+    "stars": 2,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2026-08-30",
+    "createdAt": "2022-07-15"
+  },
+  {
+    "name": "astro-sitio-web",
+    "description": "Un sitio web que esta hecho con astro",
+    "githubUrl": "https://github.com/FrankUsqAbant/astro-sitio-web",
+    "liveUrl": "https://frankusqabant.github.io/astro-sitio-web/",
+    "language": "Astro",
+    "stars": 2,
+    "tags": [
+      "Astro"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-11-22"
+  },
+  {
+    "name": "expense-tracker-ocr",
+    "description": "expense-tracker-ocr — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/expense-tracker-ocr",
+    "liveUrl": null,
+    "language": "TypeScript",
+    "stars": 1,
+    "tags": [
+      "TypeScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2026-03-10"
+  },
+  {
+    "name": "FrankUsqAbant.github.io",
+    "description": "Tarjeta digital interactiva con redes sociales, formulario de contacto y mascota llama animada",
+    "githubUrl": "https://github.com/FrankUsqAbant/FrankUsqAbant.github.io",
+    "liveUrl": "https://frankusqabant.github.io/FrankUsqAbant.github.io/",
+    "language": "JavaScript",
+    "stars": 0,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2026-08-04"
+  },
+  {
+    "name": "01-testimonios",
+    "description": "01-testimonios — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/01-testimonios",
+    "liveUrl": "https://frankusqabant.github.io/01-testimonios/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-02-08"
+  },
+  {
+    "name": "vertice-moda",
+    "description": "⚡ VÉRTICE — Moda masculina contemporánea. Sitio web premium dark-theme con acentos cobre. HTML/CSS vanilla, zero dependencias.",
+    "githubUrl": "https://github.com/FrankUsqAbant/vertice-moda",
+    "liveUrl": "https://frankusqabant.github.io/vertice-moda/",
+    "language": "HTML",
+    "stars": 0,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2026-07-30"
+  },
+  {
+    "name": "02-contador-de-clics",
+    "description": "02-contador-de-clics — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/02-contador-de-clics",
+    "liveUrl": "https://frankusqabant.github.io/02-contador-de-clics/",
+    "language": "CSS",
+    "stars": 1,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-02-08"
+  },
+  {
+    "name": "Proyecto-Library",
+    "description": "Biblioteca Digital de libros clasicos de dominio publico",
+    "githubUrl": "https://github.com/FrankUsqAbant/Proyecto-Library",
+    "liveUrl": "https://frankusqabant.github.io/Proyecto-Library/",
+    "language": "TypeScript",
+    "stars": 0,
+    "tags": [
+      "TypeScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2026-07-22"
+  },
+  {
+    "name": "aurea-dental",
+    "description": "🦷 Clínica dental premium — sitio web profesional. Diseño elegante, responsive, sin dependencias.",
+    "githubUrl": "https://github.com/FrankUsqAbant/aurea-dental",
+    "liveUrl": "https://frankusqabant.github.io/aurea-dental/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2026-07-22"
+  },
+  {
+    "name": "starter-project-eleventy",
+    "description": "starter-project-eleventy — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/starter-project-eleventy",
+    "liveUrl": "https://frankusqabant.github.io/starter-project-eleventy/",
+    "language": "Nunjucks",
+    "stars": 1,
+    "tags": [
+      "Nunjucks"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2024-08-22"
+  },
+  {
+    "name": "PokeAPI",
+    "description": "Creamos una PokeAPI para practicar",
+    "githubUrl": "https://github.com/FrankUsqAbant/PokeAPI",
+    "liveUrl": "https://frankusqabant.github.io/PokeAPI/",
+    "language": "CSS",
+    "stars": 0,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-03-22"
+  },
+  {
+    "name": "Portafolio-Frank-Abanto",
+    "description": "Un portfolio simple y animalista (HTML, CSS, JavaScript)",
+    "githubUrl": "https://github.com/FrankUsqAbant/Portafolio-Frank-Abanto",
+    "liveUrl": "https://frankusqabant.github.io/Portafolio-Frank-Abanto/",
+    "language": "CSS",
+    "stars": 0,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-08-17"
+  },
+  {
+    "name": "Developer-Theme-Portfolio",
+    "description": "Developer-Theme-Portfolio — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Developer-Theme-Portfolio",
+    "liveUrl": "https://frankusqabant.github.io/Developer-Theme-Portfolio/",
+    "language": "JavaScript",
+    "stars": 0,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-08-18"
+  },
+  {
+    "name": "portafolio-adaptable-bootstrap",
+    "description": "Un proyecto web adaptable a cualquier dispositivo, desarrollado con Bootstrap",
+    "githubUrl": "https://github.com/FrankUsqAbant/portafolio-adaptable-bootstrap",
+    "liveUrl": "https://frankusqabant.github.io/portafolio-adaptable-bootstrap/",
+    "language": "HTML",
+    "stars": 0,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-02-17"
+  },
+  {
+    "name": "PlatosYa",
+    "description": "PlatosYa — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/PlatosYa",
+    "liveUrl": "https://platos-ya.vercel.app",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2026-06-18"
+  },
+  {
+    "name": "Aplicaci-n-React-Tareas",
+    "description": "Aplicaci-n-React-Tareas — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Aplicaci-n-React-Tareas",
+    "liveUrl": "https://frankusqabant.github.io/Aplicaci-n-React-Tareas/",
+    "language": "CSS",
+    "stars": 2,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2022-05-01"
+  },
+  {
+    "name": "Contador-de-clics",
+    "description": "Contador-de-clics — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Contador-de-clics",
+    "liveUrl": "https://frankusqabant.github.io/Contador-de-clics/",
+    "language": "JavaScript",
+    "stars": 2,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2022-05-01"
+  },
+  {
+    "name": "PredictorDePartidos",
+    "description": "PredictorDePartidos — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/PredictorDePartidos",
+    "liveUrl": "https://frankusqabant.github.io/PredictorDePartidos/",
+    "language": "JavaScript",
+    "stars": 2,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-10-22"
+  },
+  {
+    "name": "NEXUS-ASCII-Generator",
+    "description": "Un banner ascii generador para consolas de terminal",
+    "githubUrl": "https://github.com/FrankUsqAbant/NEXUS-ASCII-Generator",
+    "liveUrl": "https://frankusqabant.github.io/NEXUS-ASCII-Generator/",
+    "language": "TypeScript",
+    "stars": 2,
+    "tags": [
+      "TypeScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2025-11-21"
+  },
+  {
+    "name": "simple-yoga-elite",
+    "description": "Santuario de Yoga Elite - Protocolo Aurora v15.0. Experiencia wellness de grado boutique purificada y lista para despliegue.",
+    "githubUrl": "https://github.com/FrankUsqAbant/simple-yoga-elite",
+    "liveUrl": "https://frankusqabant.github.io/simple-yoga-elite/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "Aurora-protocol",
+      "Luxury-ui",
+      "React",
+      "Yoga-elite"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2026-03-13"
+  },
+  {
+    "name": "document-student",
+    "description": "document-student — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/document-student",
+    "liveUrl": "https://frankusqabant.github.io/document-student/",
+    "language": "TypeScript",
+    "stars": 1,
+    "tags": [
+      "TypeScript"
+    ],
+    "updatedAt": "2026-08-29",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "name": "css-basico",
+    "description": "css-basico — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/css-basico",
+    "liveUrl": null,
+    "language": "CSS",
+    "stars": 2,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2025-02-08",
+    "createdAt": "2022-05-19"
+  },
+  {
+    "name": "javascript",
+    "description": "javascript — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/javascript",
+    "liveUrl": null,
+    "language": "JavaScript",
+    "stars": 2,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2025-02-08",
+    "createdAt": "2022-05-19"
+  },
+  {
+    "name": "ejercicios-javascript",
+    "description": "ejercicios-javascript — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/ejercicios-javascript",
+    "liveUrl": null,
+    "language": "JavaScript",
+    "stars": 2,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2025-02-08",
+    "createdAt": "2022-06-10"
+  },
+  {
+    "name": "scripts-main",
+    "description": "scripts-main — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/scripts-main",
+    "liveUrl": null,
+    "language": "Code",
+    "stars": 2,
+    "tags": [
+      "Full-Stack"
+    ],
+    "updatedAt": "2025-02-08",
+    "createdAt": "2022-06-19"
+  },
+  {
+    "name": "proyecto-tech-practica",
+    "description": "proyecto-tech-practica — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/proyecto-tech-practica",
+    "liveUrl": "https://frankusqabant.github.io/proyecto-tech-practica/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-21"
+  },
+  {
+    "name": "javascript-products-app",
+    "description": "javascript-products-app — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/javascript-products-app",
+    "liveUrl": "https://frankusqabant.github.io/javascript-products-app/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-21"
+  },
+  {
+    "name": "demo-sitio-halo",
+    "description": "demo-sitio-halo — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/demo-sitio-halo",
+    "liveUrl": "demo-sitio-halo-rho.vercel.app",
+    "language": "CSS",
+    "stars": 1,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-11"
+  },
+  {
+    "name": "bootstrap-wibsite",
+    "description": "bootstrap-wibsite — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/bootstrap-wibsite",
+    "liveUrl": "https://frankusqabant.github.io/bootstrap-wibsite/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-21"
+  },
+  {
+    "name": "pagina-taller-maquetacion",
+    "description": "Repositorio de proyecto del taller de maquetacion de mi LandingPage",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-taller-maquetacion",
+    "liveUrl": "pagina-taller-maquetacion.vercel.app",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-18"
+  },
+  {
+    "name": "App-vuejs",
+    "description": "App-vuejs — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/App-vuejs",
+    "liveUrl": null,
+    "language": "Vue",
+    "stars": 1,
+    "tags": [
+      "Vue"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-27"
+  },
+  {
+    "name": "pagina-maquetacion-cv",
+    "description": "Repositorio de proyectos de taller de maquetación de cv de Frank Abanto",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion-cv",
+    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion-cv/",
+    "language": "HTML",
+    "stars": 2,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-09"
+  },
+  {
+    "name": "pagina-maquetacion",
+    "description": "Repositorio de proyectos de taller de maquetación de Frank Abanto",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion",
+    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-09"
+  },
+  {
+    "name": "practice-page",
+    "description": "practice-page — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/practice-page",
+    "liveUrl": "https://frankusqabant.github.io/practice-page/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "vue-tareas",
+    "description": "vue-tareas — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/vue-tareas",
+    "liveUrl": "https://frankusqabant.github.io/vue-tareas/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "products-desktop",
+    "description": "products-desktop — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/products-desktop",
+    "liveUrl": "https://frankusqabant.github.io/products-desktop/",
+    "language": "Python",
+    "stars": 1,
+    "tags": [
+      "Python"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-21"
+  },
+  {
+    "name": "pinguino",
+    "description": "Hecho con HTML y CSS",
+    "githubUrl": "https://github.com/FrankUsqAbant/pinguino",
+    "liveUrl": null,
+    "language": "CSS",
+    "stars": 1,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "guess",
+    "description": "guess — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/guess",
+    "liveUrl": null,
+    "language": "Python",
+    "stars": 1,
+    "tags": [
+      "Python"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "Calculadora-Interactiva",
+    "description": "Calculadora-Interactiva — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Calculadora-Interactiva",
+    "liveUrl": "https://frankusqabant.github.io/Calculadora-Interactiva/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-19"
+  },
+  {
+    "name": "Task-Application",
+    "description": "Task-Application — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Task-Application",
+    "liveUrl": "https://frankusqabant.github.io/Task-Application/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-19"
+  },
+  {
+    "name": "search",
+    "description": "search — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/search",
+    "liveUrl": "https://frankusqabant.github.io/search/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-16"
+  },
+  {
+    "name": "the-books",
+    "description": "the-books — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/the-books",
+    "liveUrl": "https://frankusqabant.github.io/the-books/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-16"
+  },
+  {
+    "name": "Treasure-Map",
+    "description": "Treasure-Map — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Treasure-Map",
+    "liveUrl": null,
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-02"
+  },
+  {
+    "name": "Testimonios-de-freeCodeCamp",
+    "description": "Testimonios-de-freeCodeCamp — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Testimonios-de-freeCodeCamp",
+    "liveUrl": null,
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-01"
+  },
+  {
+    "name": "calculadora",
+    "description": "calculadora — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/calculadora",
+    "liveUrl": null,
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-01"
+  },
+  {
+    "name": "spaceX",
+    "description": "Taller de React-spaceX",
+    "githubUrl": "https://github.com/FrankUsqAbant/spaceX",
+    "liveUrl": "https://frankusqabant.github.io/spaceX/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-26"
+  },
+  {
+    "name": "nodejs-tutorial",
+    "description": "nodejs-tutorial — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/nodejs-tutorial",
+    "liveUrl": "https://frankusqabant.github.io/nodejs-tutorial/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "juego-web-frank",
+    "description": "Mi primer juego web",
+    "githubUrl": "https://github.com/FrankUsqAbant/juego-web-frank",
+    "liveUrl": null,
+    "language": "JavaScript",
+    "stars": 0,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2022-03-03",
+    "createdAt": "2022-03-03"
+  },
+  {
+    "name": "frank-taller-maquetacion",
+    "description": "Repositorios del taller de maquetación de Frank Abanto",
+    "githubUrl": "https://github.com/FrankUsqAbant/frank-taller-maquetacion",
+    "liveUrl": "https://frankusqabant.github.io/frank-taller-maquetacion/",
+    "language": "HTML",
+    "stars": 0,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2022-02-16",
+    "createdAt": "2022-02-16"
+  }
 ];
 
 const langIcons = {

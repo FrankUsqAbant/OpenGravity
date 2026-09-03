@@ -1,0 +1,39 @@
+name: Sincronización Automática del Catálogo Opengravity
+
+on:
+  schedule:
+    # Se ejecuta automáticamente todos los domingos a las 00:00 UTC (semanal)
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Permite ejecutar la sincronización manualmente en cualquier momento desde GitHub Actions
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sincronizar nuevos repositorios (hasta 100)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-repos.mjs
+
+      - name: Hacer commit y push si hay novedades
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "El catálogo ya está al día. No hay nuevos repositorios."
+          else
+            git commit -m "chore(auto): sincronización semanal de repositorios de Opengravity [skip ci]"
+            git push origin main
+          fi
