@@ -47,6 +47,19 @@ const readmeImages = {
 // ── Project Data ──
 const projects = [
   {
+    "name": "FrankUsqAbant.github.io",
+    "description": "Tarjeta digital interactiva con redes sociales, formulario de contacto y mascota llama animada",
+    "githubUrl": "https://github.com/FrankUsqAbant/FrankUsqAbant.github.io",
+    "liveUrl": "https://frankusqabant.github.io/FrankUsqAbant.github.io/",
+    "language": "JavaScript",
+    "stars": 0,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-09-04",
+    "createdAt": "2026-08-04"
+  },
+  {
     "name": "OpenGravity",
     "description": "OpenGravity proyecto de un bot para telegram",
     "githubUrl": "https://github.com/FrankUsqAbant/OpenGravity",
@@ -136,19 +149,6 @@ const projects = [
     ],
     "updatedAt": "2026-08-29",
     "createdAt": "2026-03-10"
-  },
-  {
-    "name": "FrankUsqAbant.github.io",
-    "description": "Tarjeta digital interactiva con redes sociales, formulario de contacto y mascota llama animada",
-    "githubUrl": "https://github.com/FrankUsqAbant/FrankUsqAbant.github.io",
-    "liveUrl": "https://frankusqabant.github.io/FrankUsqAbant.github.io/",
-    "language": "JavaScript",
-    "stars": 0,
-    "tags": [
-      "JavaScript"
-    ],
-    "updatedAt": "2026-08-29",
-    "createdAt": "2026-08-04"
   },
   {
     "name": "01-testimonios",
@@ -427,10 +427,23 @@ const projects = [
     "createdAt": "2022-06-19"
   },
   {
-    "name": "proyecto-tech-practica",
-    "description": "proyecto-tech-practica — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/proyecto-tech-practica",
-    "liveUrl": "https://frankusqabant.github.io/proyecto-tech-practica/",
+    "name": "javascript-products-app",
+    "description": "javascript-products-app — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/javascript-products-app",
+    "liveUrl": "https://frankusqabant.github.io/javascript-products-app/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-21"
+  },
+  {
+    "name": "bootstrap-wibsite",
+    "description": "bootstrap-wibsite — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/bootstrap-wibsite",
+    "liveUrl": "https://frankusqabant.github.io/bootstrap-wibsite/",
     "language": "HTML",
     "stars": 1,
     "tags": [
@@ -440,14 +453,14 @@ const projects = [
     "createdAt": "2022-04-21"
   },
   {
-    "name": "javascript-products-app",
-    "description": "javascript-products-app — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/javascript-products-app",
-    "liveUrl": "https://frankusqabant.github.io/javascript-products-app/",
-    "language": "JavaScript",
+    "name": "proyecto-tech-practica",
+    "description": "proyecto-tech-practica — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/proyecto-tech-practica",
+    "liveUrl": "https://frankusqabant.github.io/proyecto-tech-practica/",
+    "language": "HTML",
     "stars": 1,
     "tags": [
-      "JavaScript"
+      "HTML"
     ],
     "updatedAt": "2023-03-04",
     "createdAt": "2022-04-21"
@@ -466,84 +479,6 @@ const projects = [
     "createdAt": "2022-04-11"
   },
   {
-    "name": "bootstrap-wibsite",
-    "description": "bootstrap-wibsite — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/bootstrap-wibsite",
-    "liveUrl": "https://frankusqabant.github.io/bootstrap-wibsite/",
-    "language": "HTML",
-    "stars": 1,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-21"
-  },
-  {
-    "name": "pagina-taller-maquetacion",
-    "description": "Repositorio de proyecto del taller de maquetacion de mi LandingPage",
-    "githubUrl": "https://github.com/FrankUsqAbant/pagina-taller-maquetacion",
-    "liveUrl": "pagina-taller-maquetacion.vercel.app",
-    "language": "HTML",
-    "stars": 1,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-18"
-  },
-  {
-    "name": "App-vuejs",
-    "description": "App-vuejs — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/App-vuejs",
-    "liveUrl": null,
-    "language": "Vue",
-    "stars": 1,
-    "tags": [
-      "Vue"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-27"
-  },
-  {
-    "name": "pagina-maquetacion-cv",
-    "description": "Repositorio de proyectos de taller de maquetación de cv de Frank Abanto",
-    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion-cv",
-    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion-cv/",
-    "language": "HTML",
-    "stars": 2,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-09"
-  },
-  {
-    "name": "pagina-maquetacion",
-    "description": "Repositorio de proyectos de taller de maquetación de Frank Abanto",
-    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion",
-    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion/",
-    "language": "HTML",
-    "stars": 1,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-09"
-  },
-  {
-    "name": "practice-page",
-    "description": "practice-page — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/practice-page",
-    "liveUrl": "https://frankusqabant.github.io/practice-page/",
-    "language": "HTML",
-    "stars": 1,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-25"
-  },
-  {
     "name": "vue-tareas",
     "description": "vue-tareas — Proyecto y repositorio de código abierto en Opengravity.",
     "githubUrl": "https://github.com/FrankUsqAbant/vue-tareas",
@@ -552,32 +487,6 @@ const projects = [
     "stars": 1,
     "tags": [
       "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-25"
-  },
-  {
-    "name": "products-desktop",
-    "description": "products-desktop — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/products-desktop",
-    "liveUrl": "https://frankusqabant.github.io/products-desktop/",
-    "language": "Python",
-    "stars": 1,
-    "tags": [
-      "Python"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-21"
-  },
-  {
-    "name": "pinguino",
-    "description": "Hecho con HTML y CSS",
-    "githubUrl": "https://github.com/FrankUsqAbant/pinguino",
-    "liveUrl": null,
-    "language": "CSS",
-    "stars": 1,
-    "tags": [
-      "CSS"
     ],
     "updatedAt": "2023-03-04",
     "createdAt": "2022-04-25"
@@ -594,6 +503,97 @@ const projects = [
     ],
     "updatedAt": "2023-03-04",
     "createdAt": "2022-04-25"
+  },
+  {
+    "name": "App-vuejs",
+    "description": "App-vuejs — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/App-vuejs",
+    "liveUrl": null,
+    "language": "Vue",
+    "stars": 1,
+    "tags": [
+      "Vue"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-27"
+  },
+  {
+    "name": "practice-page",
+    "description": "practice-page — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/practice-page",
+    "liveUrl": "https://frankusqabant.github.io/practice-page/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "pagina-maquetacion",
+    "description": "Repositorio de proyectos de taller de maquetación de Frank Abanto",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion",
+    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-09"
+  },
+  {
+    "name": "pagina-maquetacion-cv",
+    "description": "Repositorio de proyectos de taller de maquetación de cv de Frank Abanto",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion-cv",
+    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion-cv/",
+    "language": "HTML",
+    "stars": 2,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-09"
+  },
+  {
+    "name": "pagina-taller-maquetacion",
+    "description": "Repositorio de proyecto del taller de maquetacion de mi LandingPage",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-taller-maquetacion",
+    "liveUrl": "pagina-taller-maquetacion.vercel.app",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-18"
+  },
+  {
+    "name": "pinguino",
+    "description": "Hecho con HTML y CSS",
+    "githubUrl": "https://github.com/FrankUsqAbant/pinguino",
+    "liveUrl": null,
+    "language": "CSS",
+    "stars": 1,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "products-desktop",
+    "description": "products-desktop — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/products-desktop",
+    "liveUrl": "https://frankusqabant.github.io/products-desktop/",
+    "language": "Python",
+    "stars": 1,
+    "tags": [
+      "Python"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-21"
   },
   {
     "name": "Calculadora-Interactiva",
