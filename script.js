@@ -47,17 +47,17 @@ const readmeImages = {
 // ── Project Data ──
 const projects = [
   {
-    "name": "FrankUsqAbant.github.io",
-    "description": "Tarjeta digital interactiva con redes sociales, formulario de contacto y mascota llama animada",
-    "githubUrl": "https://github.com/FrankUsqAbant/FrankUsqAbant.github.io",
-    "liveUrl": "https://frankusqabant.github.io/FrankUsqAbant.github.io/",
-    "language": "JavaScript",
+    "name": "extracto",
+    "description": "extracto — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/extracto",
+    "liveUrl": "https://extracto-roan.vercel.app",
+    "language": "TypeScript",
     "stars": 0,
     "tags": [
-      "JavaScript"
+      "TypeScript"
     ],
-    "updatedAt": "2026-09-04",
-    "createdAt": "2026-08-04"
+    "updatedAt": "2026-09-19",
+    "createdAt": "2026-09-19"
   },
   {
     "name": "OpenGravity",
@@ -69,8 +69,21 @@ const projects = [
     "tags": [
       "JavaScript"
     ],
-    "updatedAt": "2026-09-03",
+    "updatedAt": "2026-09-13",
     "createdAt": "2026-05-01"
+  },
+  {
+    "name": "FrankUsqAbant.github.io",
+    "description": "Tarjeta digital interactiva con redes sociales, formulario de contacto y mascota llama animada",
+    "githubUrl": "https://github.com/FrankUsqAbant/FrankUsqAbant.github.io",
+    "liveUrl": "https://frankusqabant.github.io/FrankUsqAbant.github.io/",
+    "language": "JavaScript",
+    "stars": 0,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-09-04",
+    "createdAt": "2026-08-04"
   },
   {
     "name": "proyecto-curso-html",
@@ -440,10 +453,10 @@ const projects = [
     "createdAt": "2022-04-21"
   },
   {
-    "name": "bootstrap-wibsite",
-    "description": "bootstrap-wibsite — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/bootstrap-wibsite",
-    "liveUrl": "https://frankusqabant.github.io/bootstrap-wibsite/",
+    "name": "proyecto-tech-practica",
+    "description": "proyecto-tech-practica — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/proyecto-tech-practica",
+    "liveUrl": "https://frankusqabant.github.io/proyecto-tech-practica/",
     "language": "HTML",
     "stars": 1,
     "tags": [
@@ -453,10 +466,10 @@ const projects = [
     "createdAt": "2022-04-21"
   },
   {
-    "name": "proyecto-tech-practica",
-    "description": "proyecto-tech-practica — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/proyecto-tech-practica",
-    "liveUrl": "https://frankusqabant.github.io/proyecto-tech-practica/",
+    "name": "bootstrap-wibsite",
+    "description": "bootstrap-wibsite — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/bootstrap-wibsite",
+    "liveUrl": "https://frankusqabant.github.io/bootstrap-wibsite/",
     "language": "HTML",
     "stars": 1,
     "tags": [
@@ -479,27 +492,14 @@ const projects = [
     "createdAt": "2022-04-11"
   },
   {
-    "name": "vue-tareas",
-    "description": "vue-tareas — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/vue-tareas",
-    "liveUrl": "https://frankusqabant.github.io/vue-tareas/",
-    "language": "HTML",
+    "name": "nodejs-tutorial",
+    "description": "nodejs-tutorial — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/nodejs-tutorial",
+    "liveUrl": "https://frankusqabant.github.io/nodejs-tutorial/",
+    "language": "JavaScript",
     "stars": 1,
     "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-25"
-  },
-  {
-    "name": "guess",
-    "description": "guess — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/guess",
-    "liveUrl": null,
-    "language": "Python",
-    "stars": 1,
-    "tags": [
-      "Python"
+      "JavaScript"
     ],
     "updatedAt": "2023-03-04",
     "createdAt": "2022-04-25"
@@ -518,160 +518,17 @@ const projects = [
     "createdAt": "2022-04-27"
   },
   {
-    "name": "practice-page",
-    "description": "practice-page — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/practice-page",
-    "liveUrl": "https://frankusqabant.github.io/practice-page/",
-    "language": "HTML",
-    "stars": 1,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-25"
-  },
-  {
-    "name": "pagina-maquetacion",
-    "description": "Repositorio de proyectos de taller de maquetación de Frank Abanto",
-    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion",
-    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion/",
-    "language": "HTML",
-    "stars": 1,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-09"
-  },
-  {
-    "name": "pagina-maquetacion-cv",
-    "description": "Repositorio de proyectos de taller de maquetación de cv de Frank Abanto",
-    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion-cv",
-    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion-cv/",
-    "language": "HTML",
-    "stars": 2,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-09"
-  },
-  {
-    "name": "pagina-taller-maquetacion",
-    "description": "Repositorio de proyecto del taller de maquetacion de mi LandingPage",
-    "githubUrl": "https://github.com/FrankUsqAbant/pagina-taller-maquetacion",
-    "liveUrl": "pagina-taller-maquetacion.vercel.app",
-    "language": "HTML",
-    "stars": 1,
-    "tags": [
-      "HTML"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-18"
-  },
-  {
-    "name": "pinguino",
-    "description": "Hecho con HTML y CSS",
-    "githubUrl": "https://github.com/FrankUsqAbant/pinguino",
-    "liveUrl": null,
-    "language": "CSS",
-    "stars": 1,
-    "tags": [
-      "CSS"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-25"
-  },
-  {
-    "name": "products-desktop",
-    "description": "products-desktop — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/products-desktop",
-    "liveUrl": "https://frankusqabant.github.io/products-desktop/",
-    "language": "Python",
-    "stars": 1,
-    "tags": [
-      "Python"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-21"
-  },
-  {
-    "name": "Calculadora-Interactiva",
-    "description": "Calculadora-Interactiva — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/Calculadora-Interactiva",
-    "liveUrl": "https://frankusqabant.github.io/Calculadora-Interactiva/",
+    "name": "spaceX",
+    "description": "Taller de React-spaceX",
+    "githubUrl": "https://github.com/FrankUsqAbant/spaceX",
+    "liveUrl": "https://frankusqabant.github.io/spaceX/",
     "language": "JavaScript",
     "stars": 1,
     "tags": [
       "JavaScript"
     ],
     "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-19"
-  },
-  {
-    "name": "Task-Application",
-    "description": "Task-Application — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/Task-Application",
-    "liveUrl": "https://frankusqabant.github.io/Task-Application/",
-    "language": "JavaScript",
-    "stars": 1,
-    "tags": [
-      "JavaScript"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-19"
-  },
-  {
-    "name": "search",
-    "description": "search — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/search",
-    "liveUrl": "https://frankusqabant.github.io/search/",
-    "language": "JavaScript",
-    "stars": 1,
-    "tags": [
-      "JavaScript"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-16"
-  },
-  {
-    "name": "the-books",
-    "description": "the-books — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/the-books",
-    "liveUrl": "https://frankusqabant.github.io/the-books/",
-    "language": "JavaScript",
-    "stars": 1,
-    "tags": [
-      "JavaScript"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-16"
-  },
-  {
-    "name": "Treasure-Map",
-    "description": "Treasure-Map — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/Treasure-Map",
-    "liveUrl": null,
-    "language": "JavaScript",
-    "stars": 1,
-    "tags": [
-      "JavaScript"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-02"
-  },
-  {
-    "name": "Testimonios-de-freeCodeCamp",
-    "description": "Testimonios-de-freeCodeCamp — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/Testimonios-de-freeCodeCamp",
-    "liveUrl": null,
-    "language": "JavaScript",
-    "stars": 1,
-    "tags": [
-      "JavaScript"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-01"
+    "createdAt": "2022-04-26"
   },
   {
     "name": "calculadora",
@@ -687,27 +544,183 @@ const projects = [
     "createdAt": "2022-05-01"
   },
   {
-    "name": "spaceX",
-    "description": "Taller de React-spaceX",
-    "githubUrl": "https://github.com/FrankUsqAbant/spaceX",
-    "liveUrl": "https://frankusqabant.github.io/spaceX/",
+    "name": "Testimonios-de-freeCodeCamp",
+    "description": "Testimonios-de-freeCodeCamp — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Testimonios-de-freeCodeCamp",
+    "liveUrl": null,
     "language": "JavaScript",
     "stars": 1,
     "tags": [
       "JavaScript"
     ],
     "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-26"
+    "createdAt": "2022-05-01"
   },
   {
-    "name": "nodejs-tutorial",
-    "description": "nodejs-tutorial — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/nodejs-tutorial",
-    "liveUrl": "https://frankusqabant.github.io/nodejs-tutorial/",
+    "name": "pagina-maquetacion-cv",
+    "description": "Repositorio de proyectos de taller de maquetación de cv de Frank Abanto",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion-cv",
+    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion-cv/",
+    "language": "HTML",
+    "stars": 2,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-09"
+  },
+  {
+    "name": "pagina-maquetacion",
+    "description": "Repositorio de proyectos de taller de maquetación de Frank Abanto",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-maquetacion",
+    "liveUrl": "https://frankusqabant.github.io/pagina-maquetacion/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-09"
+  },
+  {
+    "name": "practice-page",
+    "description": "practice-page — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/practice-page",
+    "liveUrl": "https://frankusqabant.github.io/practice-page/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "Treasure-Map",
+    "description": "Treasure-Map — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Treasure-Map",
+    "liveUrl": null,
     "language": "JavaScript",
     "stars": 1,
     "tags": [
       "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-02"
+  },
+  {
+    "name": "vue-tareas",
+    "description": "vue-tareas — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/vue-tareas",
+    "liveUrl": "https://frankusqabant.github.io/vue-tareas/",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "pagina-taller-maquetacion",
+    "description": "Repositorio de proyecto del taller de maquetacion de mi LandingPage",
+    "githubUrl": "https://github.com/FrankUsqAbant/pagina-taller-maquetacion",
+    "liveUrl": "pagina-taller-maquetacion.vercel.app",
+    "language": "HTML",
+    "stars": 1,
+    "tags": [
+      "HTML"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-18"
+  },
+  {
+    "name": "products-desktop",
+    "description": "products-desktop — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/products-desktop",
+    "liveUrl": "https://frankusqabant.github.io/products-desktop/",
+    "language": "Python",
+    "stars": 1,
+    "tags": [
+      "Python"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-21"
+  },
+  {
+    "name": "the-books",
+    "description": "the-books — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/the-books",
+    "liveUrl": "https://frankusqabant.github.io/the-books/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-16"
+  },
+  {
+    "name": "search",
+    "description": "search — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/search",
+    "liveUrl": "https://frankusqabant.github.io/search/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-16"
+  },
+  {
+    "name": "Task-Application",
+    "description": "Task-Application — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Task-Application",
+    "liveUrl": "https://frankusqabant.github.io/Task-Application/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-19"
+  },
+  {
+    "name": "Calculadora-Interactiva",
+    "description": "Calculadora-Interactiva — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Calculadora-Interactiva",
+    "liveUrl": "https://frankusqabant.github.io/Calculadora-Interactiva/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-19"
+  },
+  {
+    "name": "pinguino",
+    "description": "Hecho con HTML y CSS",
+    "githubUrl": "https://github.com/FrankUsqAbant/pinguino",
+    "liveUrl": null,
+    "language": "CSS",
+    "stars": 1,
+    "tags": [
+      "CSS"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
+    "name": "guess",
+    "description": "guess — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/guess",
+    "liveUrl": null,
+    "language": "Python",
+    "stars": 1,
+    "tags": [
+      "Python"
     ],
     "updatedAt": "2023-03-04",
     "createdAt": "2022-04-25"
