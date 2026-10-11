@@ -47,6 +47,19 @@ const readmeImages = {
 // ── Project Data ──
 const projects = [
   {
+    "name": "OpenGravity",
+    "description": "OpenGravity proyecto de un bot para telegram",
+    "githubUrl": "https://github.com/FrankUsqAbant/OpenGravity",
+    "liveUrl": "https://frankusqabant.github.io/OpenGravity/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2026-10-04",
+    "createdAt": "2026-05-01"
+  },
+  {
     "name": "kasa-nord",
     "description": "Kasa Nord — landing de inmobiliaria de lujo en Lima. HTML/CSS/JS planos, sin build.",
     "githubUrl": "https://github.com/FrankUsqAbant/kasa-nord",
@@ -71,19 +84,6 @@ const projects = [
     ],
     "updatedAt": "2026-09-27",
     "createdAt": "2026-09-27"
-  },
-  {
-    "name": "OpenGravity",
-    "description": "OpenGravity proyecto de un bot para telegram",
-    "githubUrl": "https://github.com/FrankUsqAbant/OpenGravity",
-    "liveUrl": "https://frankusqabant.github.io/OpenGravity/",
-    "language": "JavaScript",
-    "stars": 1,
-    "tags": [
-      "JavaScript"
-    ],
-    "updatedAt": "2026-09-20",
-    "createdAt": "2026-05-01"
   },
   {
     "name": "extracto",
