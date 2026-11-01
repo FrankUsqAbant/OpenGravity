@@ -56,7 +56,7 @@ const projects = [
     "tags": [
       "JavaScript"
     ],
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-18",
     "createdAt": "2026-05-01"
   },
   {
