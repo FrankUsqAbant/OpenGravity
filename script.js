@@ -41,11 +41,65 @@ const readmeImages = {
   "spaceX": "https://user-images.githubusercontent.com/90288287/165407539-41a1d727-86c3-476d-a876-00148a3c21bf.png",
   "OpenGravity": "https://raw.githubusercontent.com/FrankUsqAbant/OpenGravity/main/preview.webp",
   "01-testimonios": "https://readme-typing-svg.demolab.com?font=Syne&weight=700&size=34&duration=1800&pause=800&color=C6A962&center=true&vCenter=true&width=600&lines=Testimonios;React+%2B+Vite",
-  "02-contador-de-clics": "https://readme-typing-svg.demolab.com?font=Syne&weight=700&size=34&duration=1800&pause=800&color=C6A962&center=true&vCenter=true&width=600&lines=Contador+de+Clics;React+%2B+Vite"
+  "02-contador-de-clics": "https://readme-typing-svg.demolab.com?font=Syne&weight=700&size=34&duration=1800&pause=800&color=C6A962&center=true&vCenter=true&width=600&lines=Contador+de+Clics;React+%2B+Vite",
+  "jireh-pasteleria": "https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white",
+  "chavez-originals": "https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white",
+  "hostal-aguilar": "https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white"
 };
 
 // ── Project Data ──
 const projects = [
+  {
+    "name": "jireh-pasteleria",
+    "description": "JIRÉH Panadería y Pastelería (Cajamarca): catálogo de tortas, 'Arma tu torta' en vivo y pedidos por WhatsApp",
+    "githubUrl": "https://github.com/FrankUsqAbant/jireh-pasteleria",
+    "liveUrl": null,
+    "language": "TypeScript",
+    "stars": 0,
+    "tags": [
+      "Featured",
+      "Portfolio",
+      "React",
+      "Supabase",
+      "Tailwindcss"
+    ],
+    "updatedAt": "2026-11-08",
+    "createdAt": "2026-11-07"
+  },
+  {
+    "name": "chavez-originals",
+    "description": "Chavez Originals (Cajamarca): tienda de calzado con vitrina interactiva, catálogo administrable con Supabase y pedidos por WhatsApp",
+    "githubUrl": "https://github.com/FrankUsqAbant/chavez-originals",
+    "liveUrl": "https://chavez-originals.pages.dev",
+    "language": "TypeScript",
+    "stars": 0,
+    "tags": [
+      "Cloudflare-pages",
+      "Featured",
+      "Portfolio",
+      "React",
+      "Supabase"
+    ],
+    "updatedAt": "2026-11-08",
+    "createdAt": "2026-11-06"
+  },
+  {
+    "name": "hostal-aguilar",
+    "description": "Hostal Aguilar (Cajamarca): web con concepto 'la luz encendida', reservas por WhatsApp y panel con Supabase",
+    "githubUrl": "https://github.com/FrankUsqAbant/hostal-aguilar",
+    "liveUrl": "https://hostal-aguilar.pages.dev",
+    "language": "TypeScript",
+    "stars": 0,
+    "tags": [
+      "Cloudflare-pages",
+      "Featured",
+      "Portfolio",
+      "React",
+      "Supabase"
+    ],
+    "updatedAt": "2026-11-08",
+    "createdAt": "2026-11-08"
+  },
   {
     "name": "OpenGravity",
     "description": "OpenGravity proyecto de un bot para telegram",
@@ -56,7 +110,7 @@ const projects = [
     "tags": [
       "JavaScript"
     ],
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-11-01",
     "createdAt": "2026-05-01"
   },
   {
@@ -466,19 +520,6 @@ const projects = [
     "createdAt": "2022-06-19"
   },
   {
-    "name": "javascript-products-app",
-    "description": "javascript-products-app — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/javascript-products-app",
-    "liveUrl": "https://frankusqabant.github.io/javascript-products-app/",
-    "language": "JavaScript",
-    "stars": 1,
-    "tags": [
-      "JavaScript"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-21"
-  },
-  {
     "name": "proyecto-tech-practica",
     "description": "proyecto-tech-practica — Proyecto y repositorio de código abierto en Opengravity.",
     "githubUrl": "https://github.com/FrankUsqAbant/proyecto-tech-practica",
@@ -518,17 +559,17 @@ const projects = [
     "createdAt": "2022-04-11"
   },
   {
-    "name": "Calculadora-Interactiva",
-    "description": "Calculadora-Interactiva — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/Calculadora-Interactiva",
-    "liveUrl": "https://frankusqabant.github.io/Calculadora-Interactiva/",
+    "name": "javascript-products-app",
+    "description": "javascript-products-app — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/javascript-products-app",
+    "liveUrl": "https://frankusqabant.github.io/javascript-products-app/",
     "language": "JavaScript",
     "stars": 1,
     "tags": [
       "JavaScript"
     ],
     "updatedAt": "2023-03-04",
-    "createdAt": "2022-05-19"
+    "createdAt": "2022-04-21"
   },
   {
     "name": "App-vuejs",
@@ -635,6 +676,19 @@ const projects = [
     "createdAt": "2022-04-25"
   },
   {
+    "name": "guess",
+    "description": "guess — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/guess",
+    "liveUrl": null,
+    "language": "Python",
+    "stars": 1,
+    "tags": [
+      "Python"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-25"
+  },
+  {
     "name": "vue-tareas",
     "description": "vue-tareas — Proyecto y repositorio de código abierto en Opengravity.",
     "githubUrl": "https://github.com/FrankUsqAbant/vue-tareas",
@@ -648,19 +702,6 @@ const projects = [
     "createdAt": "2022-04-25"
   },
   {
-    "name": "products-desktop",
-    "description": "products-desktop — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/products-desktop",
-    "liveUrl": "https://frankusqabant.github.io/products-desktop/",
-    "language": "Python",
-    "stars": 1,
-    "tags": [
-      "Python"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-21"
-  },
-  {
     "name": "pagina-taller-maquetacion",
     "description": "Repositorio de proyecto del taller de maquetacion de mi LandingPage",
     "githubUrl": "https://github.com/FrankUsqAbant/pagina-taller-maquetacion",
@@ -672,19 +713,6 @@ const projects = [
     ],
     "updatedAt": "2023-03-04",
     "createdAt": "2022-04-18"
-  },
-  {
-    "name": "guess",
-    "description": "guess — Proyecto y repositorio de código abierto en Opengravity.",
-    "githubUrl": "https://github.com/FrankUsqAbant/guess",
-    "liveUrl": null,
-    "language": "Python",
-    "stars": 1,
-    "tags": [
-      "Python"
-    ],
-    "updatedAt": "2023-03-04",
-    "createdAt": "2022-04-25"
   },
   {
     "name": "Treasure-Map",
@@ -739,6 +767,19 @@ const projects = [
     "createdAt": "2022-05-19"
   },
   {
+    "name": "Calculadora-Interactiva",
+    "description": "Calculadora-Interactiva — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/Calculadora-Interactiva",
+    "liveUrl": "https://frankusqabant.github.io/Calculadora-Interactiva/",
+    "language": "JavaScript",
+    "stars": 1,
+    "tags": [
+      "JavaScript"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-05-19"
+  },
+  {
     "name": "pinguino",
     "description": "Hecho con HTML y CSS",
     "githubUrl": "https://github.com/FrankUsqAbant/pinguino",
@@ -750,6 +791,19 @@ const projects = [
     ],
     "updatedAt": "2023-03-04",
     "createdAt": "2022-04-25"
+  },
+  {
+    "name": "products-desktop",
+    "description": "products-desktop — Proyecto y repositorio de código abierto en Opengravity.",
+    "githubUrl": "https://github.com/FrankUsqAbant/products-desktop",
+    "liveUrl": "https://frankusqabant.github.io/products-desktop/",
+    "language": "Python",
+    "stars": 1,
+    "tags": [
+      "Python"
+    ],
+    "updatedAt": "2023-03-04",
+    "createdAt": "2022-04-21"
   },
   {
     "name": "juego-web-frank",
